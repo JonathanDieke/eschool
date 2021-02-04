@@ -31,7 +31,7 @@
                             <div class="col-md-6 input-group">
                                 <input id="password" type="password" class="form-control fa fa-eye @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                 <div class="input-group-append">
-                                    <button class="input-group-text"><span class="fa fa-eye" id="show-password"></span></button>
+                                    <button class="input-group-text" type="button"><span class="fa fa-eye" id="show-password"></span></button>
                                 </div>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
