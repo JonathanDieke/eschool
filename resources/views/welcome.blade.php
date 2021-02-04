@@ -123,10 +123,20 @@
         </div>
     </div>
 
-    <div class="alert my-5">
+</main>
+
+{{--  <footer>
+
+    <div class="alert my-4">
         <h3 class="text-light small font-weight-bold text-center"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Jonathan Dieke</h3>
     </div>
-    </main>
+</footer>  --}}
+
+<footer class="my-4">
+    <div >
+        <h3 class="text-light small font-weight-bold text-center"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Jonathan Dieke</h3>
+    </div>
+</footer>
 
 </body>
 </html>
