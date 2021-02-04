@@ -133,8 +133,9 @@
 </footer>  --}}
 
 <footer class="my-4">
-    <div >
-        <h3 class="text-light small font-weight-bold text-center"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Jonathan Dieke</h3>
+    <div class="text-center" >
+        <h3 class="text-light small font-weight-bold"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Jonathan Dieke</h3>
+        <h3 class="text-light small font-weight-bold  font-italic "> Service support disponible à tout moment : jonathan.dieke225@gmail.com  </h3>
     </div>
 </footer>
 
