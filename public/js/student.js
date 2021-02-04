@@ -7,7 +7,7 @@ $(document).ready(function () {
         $.get(basePath +'/show-students/'+ classroom_id, function (response) {
             $('tbody').empty();
             var tr =''
-
+            
             for (var i in response) {
                 tr += `<tr>
                             <td>
