@@ -1,4 +1,4 @@
-@extends('layouts.app', ["script" => "rating"])
+@extends('layouts.app', ["script" => "rating", "title" => "Rating | "])
 
 @section('content')
 
@@ -20,19 +20,19 @@
                             <div class="col-sm-12">
 
                                 <div class="form-group row">
-                                    <label for="register" class="col-sm-4 col-form-label">Matricule du professeur : </label>
+                                    <label for="register" class="col-sm-4 col-form-label text-md-right">Matricule du professeur : </label>
                                     <div class="col-sm-6">
                                         <input type="text" name="register" class="form-control" id="register">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="subject_code" class="col-sm-4 col-form-label">Code de la matière : </label>
+                                    <label for="subject_code" class="col-sm-4 col-form-label text-md-right">Code de la matière : </label>
                                     <div class="col-sm-6">
                                         <input type="text" name="subject_code" class="form-control" id="subject_code">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="classroom_code" class="col-sm-4 col-form-label">Code de la classe : </label>
+                                    <label for="classroom_code" class="col-sm-4 col-form-label text-md-right">Code de la classe : </label>
                                     <div class="col-sm-6">
                                         <input type="text" name="classroom_code" class="form-control" id="classroom_code">
                                     </div>

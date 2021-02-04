@@ -1,4 +1,4 @@
-<div class="col-sm-5" id="container">
+<div class="col-lg-5 col-12 mb-3" id="container">
 
     <div class="card">
         <div style="display:none" class="card-header h4 titleCard">{{ $titleCard }}</div>
@@ -14,7 +14,7 @@
                             @foreach ($dataform as $data)
                                 @if ($loop->first && $select)
                                     <div class="form-group row">
-                                        <label for="{{ $data["for"] }}" class="col-sm-5 col-6 col-form-label">{{ $data["label"] }}</label>
+                                        <label for="{{ $data["for"] }}" class="col-sm-5 col-6 col-form-label text-md-right">{{ $data["label"] }}</label>
                                         <div class="col-sm-7 input">
                                             <select name="{{ $data["for"] }}" class="form-control" id="{{ $data["for"] }}">
                                                 @foreach ($models as $model)
@@ -27,7 +27,7 @@
                                     </div>
                                 @else
                                     <div class="form-group row">
-                                        <label for="{{ $data["for"] }}" class="col-sm-5 col-6 col-form-label"> {{ $data["label"] }} </label>
+                                        <label for="{{ $data["for"] }}" class="col-sm-5 col-6 col-form-label text-md-right"> {{ $data["label"] }} </label>
                                         <div class="col-sm-7 input">
                                             <input name="{{ $data["for"] }}" type="{{ $data["type"] }}" class="form-control" id="{{ $data["for"] }}">
                                         </div>
@@ -36,7 +36,7 @@
                             @endforeach
                             @if (Route::is('student.create') || Route::is('teacher.create'))
                                 <div class="form-group row">
-                                    <label for="avatar" class="col-sm-5 col-6 col-form-label"> Photo : </label>
+                                    <label for="avatar" class="col-sm-5 col-6 col-form-label text-md-right"> Photo : </label>
                                     <div class="col-sm-7 input">
                                         <input name="avatar" type="file" class="form-control" id="avatar">
                                     </div>

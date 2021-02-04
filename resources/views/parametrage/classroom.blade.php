@@ -1,4 +1,4 @@
-@extends('layouts.app', ['script' => 'classroom'])
+@extends('layouts.app', ['script' => 'classroom', "title" => "Create | "])
 
 
 @section('content')
@@ -8,7 +8,7 @@
 
             <x-form-component :titleCard="$titlecard" :models="$models" :dataform="$dataform" :select="$select" />
 
-            <div class="col-sm-7" id="table">
+            <div class="col-lg-7 col-12 " id="table">
                 <div class="">
                         <table class="table table-bordered table-striped">
                             <thead>

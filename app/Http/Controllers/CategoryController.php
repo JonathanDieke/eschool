@@ -24,8 +24,8 @@ class CategoryController extends Controller
         $titleCard = "Enregistrer une nouvelle catégorie";
         $select = false;
         $dataform = collect([
-            ['for' => 'code', 'label' => 'Code de la catégorie : ', 'type' => 'text'],
-            ['for' => 'libel', 'label' => 'Libellé de la catégorie : ', 'type' => 'text'],
+            ['for' => 'code', 'label' => 'Code catégorie : ', 'type' => 'text'],
+            ['for' => 'libel', 'label' => 'Libellé catégorie : ', 'type' => 'text'],
         ]);
 
         return view('parametrage.category', compact('models', 'titleCard', 'select', 'dataform'));

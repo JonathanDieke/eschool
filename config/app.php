@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-        MercurySeries\Flashy\FlashyServiceProvider::class,
+        MercurySeries\Flashy\FlashyServiceProvider::class, 
         /*
          * Application Service Providers...
          */
@@ -174,6 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        // Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 
@@ -227,6 +229,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Flashy' => MercurySeries\Flashy\Flashy::class,
+        // 'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 

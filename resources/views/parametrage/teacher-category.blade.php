@@ -1,4 +1,4 @@
-@extends('layouts.app', ['script'=>'teacher'])
+@extends('layouts.app', ['script'=>'teacher', "title" => "Teacher | "])
 
 @section('content')
 <div class="container-fluid">
@@ -14,7 +14,7 @@
         <div id="tabs-1">
             <div class="row">
 
-                <div class="col-sm-5" id="container-teacher">
+                <div class="col-lg-5 col-12 mb-3" id="container-teacher">
 
                     <div class="card">
 
@@ -30,14 +30,14 @@
                                     <div class="col-sm-8">
 
                                         <div class="form-group row">
-                                            <label for="register" class="col-sm-3 col-form-label">Matricule : </label>
+                                            <label for="register" class="col-sm-3 col-form-label text-md-right">Matricule : </label>
                                             <div class="col-sm-9">
                                                 <input name="register" type="text" class="form-control" id="register">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="category_id" class="col-sm-3 col-form-label">Catégorie : </label>
+                                            <label for="category_id" class="col-sm-3 col-form-label text-md-right">Catégorie : </label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" name="category_id" id="category_id">
                                                     @foreach ($categories as $category)
@@ -48,7 +48,7 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="subject_id" class="col-sm-3 col-form-label">Matière enseignée : </label>
+                                            <label for="subject_id" class="col-sm-3 col-form-label text-md-right">Matière enseignée : </label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" name="subject_id" id="subject_id">
                                                     @foreach ($subjects as $s)
@@ -59,35 +59,35 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="fullname" class="col-sm-3 col-form-label">Nom et Prénom: </label>
+                                            <label for="fullname" class="col-sm-3 col-form-label text-md-right">Nom et Prénom: </label>
                                             <div class="col-sm-9">
                                                 <input name="fullname" type="text" class="form-control" id="fullname">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="email" class="col-sm-3 col-form-label">E-mail : </label>
+                                            <label for="email" class="col-sm-3 col-form-label text-md-right">E-mail : </label>
                                             <div class="col-sm-9">
                                                 <input name="email" type="email" class="form-control" id="email">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="birthday" class="col-sm-3 col-form-label">Date de naissance : </label>
+                                            <label for="birthday" class="col-sm-3 col-form-label text-md-right">Date de naissance : </label>
                                             <div class="col-sm-9">
                                                 <input name="birthday" type="date" class="form-control" id="birthday">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="birthplace" class="col-sm-3 col-form-label">Lieu de naissance : </label>
+                                            <label for="birthplace" class="col-sm-3 col-form-label text-md-right">Lieu de naissance : </label>
                                             <div class="col-sm-9">
                                                 <input name="birthplace" type="text" class="form-control" id="birthplace">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="avatar" class="col-sm-3 col-form-label"> Photo : </label>
+                                            <label for="avatar" class="col-sm-3 col-form-label text-md-right"> Photo : </label>
                                             <div class="col-sm-9 input">
                                                 <input name="avatar" type="file" class="form-control" id="avatar">
                                             </div>
@@ -111,7 +111,7 @@
 
                 </div>
 
-                <div class="col-sm-7" id="col-sm-7-teacher">
+                <div class="col-lg-7 col-12" id="col-sm-7-teacher">
                     <table class="table table-striped table-bordered text-center" id="table-teacher">
                         <thead>
                             <th>id</th>
@@ -136,46 +136,7 @@
 
                 <x-form-component :titleCard="$titleCard" :models="$models" :dataform="$dataform" :select="$select" />
 
-                    {{-- <div class="card">
-                        <div class="card-header h4">Enregistrer une nouvelle catégorie</div>
-
-                        <div class="card-body">
-
-                            <div>
-                                <form method="POST" action="{{ route('category.store') }}" id="form-category">
-                                    @csrf
-                                    <div class="row">
-
-                                        <div class="col-sm-8">
-
-                                            <div class="form-group row">
-                                                <label for="code" class="col-sm-3 col-form-label">Code de la catégorie: </label>
-                                                <div class="col-sm-9">
-                                                    <input name="code" type="text" class="form-control" id="code">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="libel" class="col-sm-3 col-form-label">Libellé de la catégorie </label>
-                                                <div class="col-sm-9">
-                                                    <input name="libel" type="text" class="form-control" id="libel">
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col-sm-4">
-                                            @include('partials.__buttons')
-                                        </div>
-
-                                    </div>
-                                </form>
-
-                            </div>
-
-                        </div>
-                    </div> --}}
-
-                <div class="col-sm-7" id="table">
+                <div class="col-lg-7 col-12" id="table">
                     <table class="table table-striped table-bordered text-center" id="table-category">
                         <thead>
                             <th>

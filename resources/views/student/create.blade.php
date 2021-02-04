@@ -11,7 +11,7 @@
 
         <x-form-component :titleCard="$titlecard" :models="$models" :dataform="$dataform" :select="$select" />
 
-        <div class="col-sm-7" id="table">
+        <div class="col-lg-7 col-12" id="table">
             <table class="table table-bordered table-striped table-hover text-center">
                 <thead>
                     <th>

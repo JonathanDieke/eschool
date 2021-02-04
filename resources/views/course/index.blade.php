@@ -1,6 +1,6 @@
 @inject('date', 'Carbon\Carbon')
 
-@extends('layouts.app', ['script' => 'rating'])
+@extends('layouts.app', ['script' => 'rating', "title" => "Course | "])
 
 @section('content')
 
@@ -33,31 +33,31 @@
                         <div class="col-sm-12">
 
                             <div class="form-group row">
-                                <label for="register" class="col-sm-4 col-form-label">Matricule du professeur : </label>
+                                <label for="register" class="col-sm-4 col-form-label text-md-right">Matricule du professeur : </label>
                                 <div class="col-sm-6">
                                     <input name="register" type="text" class="form-control" id="register">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="subject_code" class="col-sm-4 col-form-label">Code de la matière : </label>
+                                <label for="subject_code" class="col-sm-4 col-form-label text-md-right">Code de la matière : </label>
                                 <div class="col-sm-6">
                                     <input name="subject_code" type="text" class="form-control" id="subject_code">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="classroom_code" class="col-sm-4 col-form-label">Code de la classe : </label>
+                                <label for="classroom_code" class="col-sm-4 col-form-label text-md-right">Code de la classe : </label>
                                 <div class="col-sm-6">
                                     <input name="classroom_code" type="text" class="form-control" id="classroom_code">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="date" class="col-sm-4 col-form-label">Date du cours : </label>
+                                <label for="date" class="col-sm-4 col-form-label text-md-right">Date du cours : </label>
                                 <div class="col-sm-6">
                                     <input name="date" type="date" value="{{ $date::now()->format("Y-m-d") }}" class="form-control" id="date">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="missing" class="col-sm-4 col-form-label">Nombre d'absents : </label>
+                                <label for="missing" class="col-sm-4 col-form-label text-md-right">Nombre d'absents : </label>
                                 <div class="col-sm-6">
                                     <input name="missing" type="number" min="0" value="0" class="form-control" id="missing">
                                 </div>

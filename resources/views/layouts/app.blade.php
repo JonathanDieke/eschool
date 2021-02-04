@@ -373,7 +373,7 @@
 
             @if (! Route::is("home"))
                 <footer>
-                    <div class="alert my-5">
+                    <div class="alert my-2">
                         <h3 class="text-dark small font-weight-bold text-center"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Jonathan Dieke</h3>
                     </div>
                 </footer>

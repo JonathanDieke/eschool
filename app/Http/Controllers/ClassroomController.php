@@ -34,8 +34,8 @@ class ClassroomController extends Controller
         $select = true;
         $dataform = collect([
                 ['for'=> 'room_id', 'label'=> 'Salle : ', ],
-                ['for'=> 'code', 'label'=> 'Code de la classe : ', 'type' => 'text'],
-                ['for'=> 'libel', 'label'=> 'Libellé de la classe : ', 'type' => 'text'],
+                ['for'=> 'code', 'label'=> 'Code classe : ', 'type' => 'text'],
+                ['for'=> 'libel', 'label'=> 'Libellé classe : ', 'type' => 'text'],
         ]);
 
         return view("parametrage.classroom", compact('models', 'titlecard','select', 'dataform'));
