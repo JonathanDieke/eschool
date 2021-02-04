@@ -1,7 +1,7 @@
 <div class="container d-flex justify-content-center col-sm-10">
 
     <div class="card " style="width: 18rem;">
-        <img src="{{ asset('storage')."/".$model["avatar"] }}" class="card-img-top" alt="{{ 'vaa' }}">
+        <img src="{{ asset('storage')."/".$model["avatar"] }}" class="card-img-top" alt="{{ 'pricture profile' }}" styel="height:150px; width:150px">
 
         <div class="card-body">
             <ul class="list-group list-group-flush">
