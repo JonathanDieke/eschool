@@ -65,7 +65,8 @@ class StudentController extends Controller
         $data['register'] = Str::upper($data['register']);
         $data['fullname'] = Str::title($data['fullname']);
         $data['birthplace'] = Str::title($data['birthplace']);
-        $data['avatar'] = request('avatar')->store('avatars', 'public');
+
+        $data['avatar'] = request('avatar')->store('avatars', 'public_folder');
 
 
         student::updateOrCreate( [ "register" => $data["register"] ], $data);
