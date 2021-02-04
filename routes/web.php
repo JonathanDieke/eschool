@@ -1,9 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\models\subject ;
 use App\models\teacher ;
 use App\models\classroom ;
-use App\models\subject ;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 
 header('Access-Control-Allow-Origin ', '*');
@@ -57,6 +58,10 @@ Route::get('/rating/{teacher}/{classroom}/{subject}', function (Teacher $teacher
 
 Route::resource('course', "CourseController")->except(["show", "edit", "update"])->middleware("auth");
 Route::get('course/get-course', "CourseController@getCourse");
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
 
 
 
