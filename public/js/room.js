@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-    let basePath = 'http://localhost:8000/room'
+    // let basePath = 'http://localhost:8000/room'
+    
+    let basePath = 'http://eschool225.herokuapp.com/room'
 
     //function to display students by their classroom
     function show(delay=1000) {

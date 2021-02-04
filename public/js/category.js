@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-    let basePath = 'http://localhost:8000/category'
+    // let basePath = 'http://localhost:8000/category'
+    
+    let basePath = 'http://eschool225.herokuapp.com/category'
 
     //Ajax request for register and update data
     function ajaxRequest(event, method, url) {

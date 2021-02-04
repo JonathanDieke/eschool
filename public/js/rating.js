@@ -1,11 +1,12 @@
 $( () => {
-    let firstchange = false
+    
+    let basePath = 'http://eschool225.herokuapp.com'
 
     //autocompletion by register of teacher field
     $('#register').autocomplete({
         source: function (request, cb) {
             $.ajax({
-                url: 'http://localhost:8000/teacher/get-teacher/' + request.term, //request.term : elt recherche pour la completion
+                url: basePath + '/teacher/get-teacher/' + request.term, //request.term : elt recherche pour la completion
                 method: 'GET',
                 dataType: 'json',
                 success: function (res) { //res => resultat retouné par la requete ajax
@@ -47,7 +48,7 @@ $( () => {
 
         source: function (request, cb) {
             $.ajax({
-                url: 'http://localhost:8000/subject/get-subject/' + request.term, //request.term : elt recherche pour la completion
+                url: basePath + '/subject/get-subject/' + request.term, //request.term : elt recherche pour la completion
                 method: 'GET',
                 dataType: 'json',
                 success: function (res) { //res => resultat retouné par la requete ajax
@@ -89,7 +90,7 @@ $( () => {
 
         source: function (request, cb) {
             $.ajax({
-                url: 'http://localhost:8000/classroom/get-classroom/' + request.term, //request.term : elt recherche pour la completion
+                url: basePath + '/classroom/get-classroom/' + request.term, //request.term : elt recherche pour la completion
                 method: 'GET',
                 dataType: 'json',
                 success: function (res) { //res => resultat retouné par la requete ajax
@@ -134,7 +135,7 @@ $( () => {
         e.preventDefault()
         if ($("#register").val() && $("#classroom_code").val() && $("#subject_code").val()){
 
-            const url = `http://localhost:8000/rating/${$("#register").val()}/${$("#classroom_code").val()}/${$("#subject_code").val()}`
+            const url = `${basePath}/rating/${$("#register").val()}/${$("#classroom_code").val()}/${$("#subject_code").val()}`
 
             window.location.assign(url)
         }else{

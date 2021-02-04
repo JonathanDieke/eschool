@@ -1,5 +1,8 @@
 $(() => {
-    const basePath = 'http://localhost:8000/course'
+    // const basePath = 'http://localhost:8000/course'
+    
+    let basePath = 'http://eschool225.herokuapp.com/course'
+
     $(".search-course").click((e) => {
         e.preventDefault()
 

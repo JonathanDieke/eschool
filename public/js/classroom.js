@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-    var basePath = 'http://localhost:8000/classroom'
+    // var basePath = 'http://localhost:8000/classroom'
+    
+    let basePath = 'http://eschool225.herokuapp.com/classroom'
 
     // function to show data from database
     function show(delay=1000) {

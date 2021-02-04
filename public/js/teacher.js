@@ -10,8 +10,11 @@ $('a[href="#tabs-2"]').click(function () {
 
 $( () => {
 
-    let basePathTeacher = 'http://localhost:8000/teacher'
-    let basePathCategory = 'http://localhost:8000/category'
+    // let basePathTeacher = 'http://localhost:8000/teacher'
+    // let basePathCategory = 'http://localhost:8000/category'
+    
+    let basePathTeacher = 'http://eschool225.herokuapp.com/teacher'
+    let basePathCategory = 'http://eschool225.herokuapp.com/category'
 
     //Ajax request for register and update data
     function createOrUpdateAjaxRequest(event, method, url, formSelector, errorSelector) {
